@@ -1,7 +1,7 @@
-diff --git a/gtkwave3-gtk3/share/appdata/gtkwave.appdata.xml b/gtkwave3-gtk3/share/appdata/gtkwave.appdata.xml
+diff --git a/share/appdata/gtkwave.appdata.xml b/share/appdata/gtkwave.appdata.xml
 index 917ca24..a8128be 100644
---- a/gtkwave3-gtk3/share/appdata/gtkwave.appdata.xml
-+++ b/gtkwave3-gtk3/share/appdata/gtkwave.appdata.xml
+--- a/share/appdata/gtkwave.appdata.xml
++++ b/share/appdata/gtkwave.appdata.xml
 @@ -1,20 +1,48 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <!-- Copyright 2014 Tony Bybell <bybell@rocketmail.com> -->
