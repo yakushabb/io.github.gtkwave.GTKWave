@@ -27,6 +27,9 @@ index 917ca24..a8128be 100644
 +    <p>
  The viewer supports both post-mortem viewing of VCD files and interactive viewing of VCD data.  Tcl scripting and callback capability allow for remote control by other applications.
  </p>
++  <p>
++ NOTE: The transaction example doesn't run because of mismatched GLIBC versions. This is a known issue and limitation of the flatpak version.
++</p>
 -</description>
 -<url type="homepage">http://gtkwave.sourceforge.net/</url>
 -<screenshots>
@@ -43,7 +46,6 @@ index 917ca24..a8128be 100644
 +  <screenshots>
 +    <screenshot type="default">
 +      <image>http://gtkwave.sourceforge.net/gtkwave-appdata.png</image>
-+      <caption/>
 +    </screenshot>
 +  </screenshots>
 +
