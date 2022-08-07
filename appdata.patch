@@ -28,7 +28,7 @@ index 917ca24..a8128be 100644
  The viewer supports both post-mortem viewing of VCD files and interactive viewing of VCD data.  Tcl scripting and callback capability allow for remote control by other applications.
  </p>
 +  <p>
-+ NOTE: The transaction example doesn't run because of mismatched GLIBC versions. This is a known issue and limitation of the flatpak version.
++ NOTE: External process and transaction process filters are executed inside the Flatpak sandbox and don't have access to libraries on the host system. Compiling process filters with a newer GLIBC version than used in the Flatpak runtime will also cause the filter process to fail. Possible workarounds for this problem are to use static executables or to compile the process filter using the org.gnome.Sdk Flatpak.
 +</p>
 -</description>
 -<url type="homepage">http://gtkwave.sourceforge.net/</url>
