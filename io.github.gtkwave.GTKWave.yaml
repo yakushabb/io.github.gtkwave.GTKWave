@@ -1,6 +1,6 @@
 app-id: io.github.gtkwave.GTKWave
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: gtkwave
 rename-icon: gtkwave
@@ -40,7 +40,5 @@ modules:
       - install -Dm644 share/appdata/gtkwave.appdata.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: http://gtkwave.sourceforge.net/gtkwave-gtk3-3.3.111.tar.gz
-        sha256: b4e1c2f718fb3c4b4f412a220876b9da599fe11745fb6f7eb4aed107b1106233
-      - type: patch
-        path: appdata.patch
+        url: http://gtkwave.sourceforge.net/gtkwave-gtk3-3.3.114.tar.gz
+        sha256: cf3a5fcabb37a96724cde2e4a7403bdf27b51e9146ce67a794dbe47017cf84ac
