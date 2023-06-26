@@ -42,5 +42,9 @@ modules:
       - type: archive
         url: http://gtkwave.sourceforge.net/gtkwave-gtk3-3.3.114.tar.gz
         sha256: cf3a5fcabb37a96724cde2e4a7403bdf27b51e9146ce67a794dbe47017cf84ac
+        x-checker-data:
+          type: "html"
+          url: "https://sourceforge.net/projects/gtkwave/rss"
+          pattern: "<link>(https://sourceforge.net/.+/gtkwave-([\\d\\.]+\\d).tar.gz)/download</link>"
       - type: patch
         path: appdata.patch
