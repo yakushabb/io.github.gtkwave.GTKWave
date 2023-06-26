@@ -17,25 +17,25 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/tcl/Tcl/8.6.12/tcl8.6.12-src.tar.gz
-        sha256: 26c995dd0f167e48b11961d891ee555f680c175f7173ff8cb829f4ebcde4c1a6
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tcl8.6.13-src.tar.gz
+        sha256: 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
         x-checker-data:
-          type: "html"
-          url: "https://sourceforge.net/projects/tcl/rss"
-          pattern: "<link>(https://sourceforge.net/.+/tcl([\\d\\.]+\\d)-src.tar.gz)/download</link>"
-    subdir: "unix"
+          type: html
+          url: https://sourceforge.net/projects/tcl/rss
+          pattern: <link>(https://sourceforge.net/.+/tcl([\d\.]+\d)-src.tar.gz)/download</link>
+    subdir: unix
     post-install:
       - chmod 755 /app/lib/libtcl*.so
   - name: tk
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/tcl/Tcl/8.6.12/tk8.6.12-src.tar.gz
-        sha256: 12395c1f3fcb6bed2938689f797ea3cdf41ed5cb6c4766eec8ac949560310630
+        url: https://sourceforge.net/projects/tcl/files/Tcl/8.6.13/tk8.6.13-src.tar.gz
+        sha256: 2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
         x-checker-data:
-          type: "html"
-          url: "https://sourceforge.net/projects/tcl/rss"
-          pattern: "<link>(https://sourceforge.net/.+/tk([\\d\\.]+\\d)-src.tar.gz)/download</link>"
-    subdir: "unix"
+          type: html
+          url: https://sourceforge.net/projects/tcl/rss
+          pattern: <link>(https://sourceforge.net/.+/tk([\d\.]+\d)-src.tar.gz)/download</link>
+    subdir: unix
     post-install:
       - chmod 755 /app/lib/libtk*.so
   - name: gtkwave
@@ -48,11 +48,11 @@ modules:
       - install -Dm644 share/appdata/gtkwave.appdata.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: http://gtkwave.sourceforge.net/gtkwave-gtk3-3.3.114.tar.gz
-        sha256: cf3a5fcabb37a96724cde2e4a7403bdf27b51e9146ce67a794dbe47017cf84ac
+        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.115/gtkwave-gtk3-3.3.115.tar.gz
+        sha256: adb7a7c02b18ca0835a064b672f6cdc51f875c454b0189a743f2ce8b91e64aa5
         x-checker-data:
-          type: "html"
-          url: "https://sourceforge.net/projects/gtkwave/rss"
-          pattern: "<link>(https://sourceforge.net/.+/gtkwave-gtk3-([\\d\\.]+\\d).tar.gz)/download</link>"
+          type: html
+          url: https://sourceforge.net/projects/gtkwave/rss
+          pattern: <link>(https://sourceforge.net/.+/gtkwave-gtk3-([\d\.]+\d).tar.gz)/download</link>
       - type: patch
         path: appdata.patch
