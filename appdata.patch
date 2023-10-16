@@ -52,6 +52,12 @@ index 917ca24..a8128be 100644
 +  <content_rating type="oars-1.0" />
 +
 +  <releases>
++    <release version="3.3.117" date="2023-08-14">
++    </release>
++    <release version="3.3.116" date="2023-07-23">
++    </release>
++    <release version="3.3.115" date="2023-06-26">
++    </release>
 +    <release version="3.3.114" date="2023-03-22">
 +    </release>
 +    <release version="3.3.111" date="2021-09-02">
