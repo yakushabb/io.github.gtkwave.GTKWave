@@ -45,7 +45,7 @@ modules:
       - --disable-dependency-tracking
       - --disable-mime-update
     post-install:
-      - install -Dm644 share/appdata/gtkwave.appdata.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
+      - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
         url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.117/gtkwave-gtk3-3.3.117.tar.gz
