@@ -25,7 +25,7 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tcl([\d\.]+\d)-src.tar.gz)/download</link>
     subdir: unix
     post-install:
-      - chmod 755 /app/lib/libtcl*.so
+      - chmod 755 /app/lib/lib*tcl*.so
   - name: tk
     sources:
       - type: archive
@@ -37,7 +37,7 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tk([\d\.]+\d)-src.tar.gz)/download</link>
     subdir: unix
     post-install:
-      - chmod 755 /app/lib/libtk*.so
+      - chmod 755 /app/lib/lib*tk*.so
   - name: gtkwave
     config-opts:
       - --enable-gtk3
@@ -48,8 +48,8 @@ modules:
       - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.118/gtkwave-gtk3-3.3.118.tar.gz
-        sha256: 0f4330c028a2ab3d2f4d4ceeaf6db6925db010c4b6fd52d11022d0e5dea0486a
+        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.120/gtkwave-gtk3-3.3.120.tar.gz
+        sha256: 5da94863fb2e5d88cc019e2bfdc676022398113894b585d864e11ca8341b24d8
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
