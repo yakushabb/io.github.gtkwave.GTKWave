@@ -25,7 +25,7 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tcl([\d\.]+\d)-src.tar.gz)/download</link>
     subdir: unix
     post-install:
-      - chmod 755 /app/lib/libtcl*.so
+      - chmod 755 /app/lib/lib*tcl*.so
   - name: tk
     sources:
       - type: archive
@@ -37,7 +37,7 @@ modules:
           pattern: <link>(https://sourceforge.net/.+/tk([\d\.]+\d)-src.tar.gz)/download</link>
     subdir: unix
     post-install:
-      - chmod 755 /app/lib/libtk*.so
+      - chmod 755 /app/lib/lib*tk*.so
   - name: gtkwave
     config-opts:
       - --enable-gtk3
