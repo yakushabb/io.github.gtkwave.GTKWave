@@ -1,6 +1,6 @@
 app-id: io.github.gtkwave.GTKWave
 runtime: org.gnome.Platform
-runtime-version: '45'
+runtime-version: '46'
 sdk: org.gnome.Sdk
 command: gtkwave
 rename-icon: gtkwave
@@ -54,3 +54,5 @@ modules:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
           pattern: <link>(https://sourceforge.net/.+/gtkwave-gtk3-([\d\.]+\d).tar.gz)/download</link>
+      - type: patch
+        path: appdata.patch
