@@ -48,11 +48,9 @@ modules:
       - install -Dm644 share/appdata/io.github.gtkwave.GTKWave.metainfo.xml /app/share/metainfo/io.github.gtkwave.GTKWave.metainfo.xml
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.121/gtkwave-gtk3-3.3.121.tar.gz
-        sha256: 54aa45788d6d52afb659c3aef335aafde0ef2c8990a7770f8eaa64e57f227346
+        url: https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.122/gtkwave-gtk3-3.3.122.tar.gz
+        sha256: 6201b5f93dcaeafa92fc0ec4ad4baeaf60acf16fc8f019bbf061cf4ebf27938a
         x-checker-data:
           type: html
           url: https://sourceforge.net/projects/gtkwave/rss
           pattern: <link>(https://sourceforge.net/.+/gtkwave-gtk3-([\d\.]+\d).tar.gz)/download</link>
-      - type: patch
-        path: appdata.patch
